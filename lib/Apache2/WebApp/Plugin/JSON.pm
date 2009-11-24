@@ -20,7 +20,7 @@ use warnings;
 use base 'Apache2::WebApp::Plugin';
 use JSON;
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~[  PRIVATE METHODS  ]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
@@ -54,8 +54,6 @@ Apache2::WebApp::Plugin::JSON - JSON module wrapper
 =head1 DESCRIPTION
 
 Interface to the JSON (JavaScript Object Notation) encoder/decoder.
-
-=head1 MORE INFO
 
 L<http://json.org>
 

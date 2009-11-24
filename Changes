@@ -2,3 +2,6 @@ Revision history for Perl module Apache2::WebApp::Plugin::JSON
 
 0.01 Sun Nov 22 15:49:31 2009
     - original version; created by ExtUtils::ModuleMaker 0.51
+
+0.02 Mon Nov 23 23:29:19 2009
+    - Minor POD updates.

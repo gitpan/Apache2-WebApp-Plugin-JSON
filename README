@@ -11,7 +11,6 @@ SYNOPSIS
 DESCRIPTION
     Interface to the JSON (JavaScript Object Notation) encoder/decoder.
 
-MORE INFO
     <http://json.org>
 
 PREREQUISITES
