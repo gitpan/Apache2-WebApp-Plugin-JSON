@@ -20,7 +20,21 @@ use warnings;
 use base 'Apache2::WebApp::Plugin';
 use JSON;
 
-our $VERSION = 0.03;
+our $VERSION = 0.04;
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~[  OBJECT METHODS  ]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+#----------------------------------------------------------------------------+
+# new(\%config)
+#
+# Constructor method used to instantiate a new template object.
+
+sub new {
+    my $class  = shift;
+    my $config = (ref $_[0] eq 'HASH') ? shift : { @_ };
+    my $self   = bless( {}, $class );
+    return $self->_init($config) || $class->error;
+}
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~[  PRIVATE METHODS  ]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
@@ -31,8 +45,7 @@ our $VERSION = 0.03;
 
 sub _init {
     my ( $self, $params ) = @_;
-    $self->{OBJECT} = new JSON;
-    return $self;
+    return new JSON;
 }
 
 1;
