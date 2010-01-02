@@ -20,7 +20,7 @@ use warnings;
 use base 'Apache2::WebApp::Plugin';
 use JSON;
 
-our $VERSION = 0.04;
+our $VERSION = 0.05;
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~[  OBJECT METHODS  ]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
