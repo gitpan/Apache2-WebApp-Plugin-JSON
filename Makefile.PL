@@ -21,8 +21,9 @@ WriteMakefile(
     AUTHOR       => 'Marc S. Brooks (mbrooks@cpan.org)',
     PREREQ_PM => {
         'Apache::Test'    => 0,
-        'Apache2::WebApp' => 0.21,
+        'Apache2::WebApp' => 0.35,
         'JSON'            => 2.03,
+        'Test::More'      => 0,
     },
     clean => {
         FILES => "@{ clean_files() }",
