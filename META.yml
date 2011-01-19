@@ -1,7 +1,7 @@
 --- #YAML:1.0
 name: Apache2::WebApp::Plugin::JSON
 abstract: Interface to the JSON (JavaScript Object Notation) encoder/decoder
-version: 0.09
+version: 0.10
 author:
   - Marc S. Brooks <mbrooks@cpan.org>
 license: perl
